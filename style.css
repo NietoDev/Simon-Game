@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(192, 97, 255)
+}
+
+#heading {
+    margin-top: 2rem;
+}
+
+#h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.text {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 4.5rem;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: honeydew;
+    margin-bottom: 0;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-left: 5.9rem;
+}
+
+.btn {
+    align-content: center;
+    display: inline-block;
+    height: 14rem;
+    width: 14rem;
+    margin: 0.5rem;
+    border: 0.5rem solid black;
+    border-radius: 20%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.waiting {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.1, 0, 1, 0);
+    -webkit-animation-duration: 0.9s;
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
